@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amzad Hussain PortFolio Website</title>
+
+    <link rel="icon" href="./images/title image.jpg" type="image/png">
+
+    <!--    STYLE.CSS -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!--    UNICON ICONS -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- FONT-AWESOME ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <!-- LOADING INDICATOR -->
+    <div id="loadingIndicator" class="loading">
+        <div class="spinner"></div>
+    </div>
+
+
+    <!-- NAVBAR -->
+    <nav>
+        <a href="#header" class="logo"><span>A</span>mzad</a>
+
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+            <i class="fas fa-bars menu-icon"></i>
+        </label>
+
+        <ul>
+            <li><a href="#header"><i class="uil uil-estate"></i> Home</a></li>
+
+            <li><a href="#about"><i class="uil uil-user"></i> About</a></li>
+
+            <li><a href="#services"><i class="uil uil-file-alt"></i> Services</a></li>
+
+            <li><a href="#projects"><i class="uil uil-scenery"></i> Projects</a></li>
+
+            <li><a href="#contact"><i class="uil uil-chat-bubble-user"></i> Contact</a></li>
+
+            <button id="themeToggle" class="theme-toggle">
+                <i id="sunIcon" class="uil uil-sun"></i>
+                <i id="moonIcon" class="uil uil-moon"></i>
+            </button>
+        </ul>
+
+    </nav>
+
+
+
+    <!-- HOME PAGE -->
+    <div id="header">
+        <div class="container">
+            <div class="home" id="home">
+                <div class="home-content">
+                    <h3 class="head-name">Hi, I'm <span>Amzad Hussain</span></h3>
+                    <h3>And I'm a 👉<span class="multiple-text"></span></h3>
+                    <p>I am a Full-Stack Web Developer. I have done Front-End and Back-End. I am expert in MERN Stack. I
+                        have completed HTML, CSS, JavaScript, Advanced JavaScript, React, Chakra-UI, Tailwind-CSS, in
+                        Front-End. and in Back-End :- Express.js, Node.js, MongoDB, Mongoose and have read a lot of
+                        things. I like to learn and read about new technologies and I try to write my code easy as well
+                        as possible. I am looking for a Full-time Job !</p>
+
+                    <div class="social-btns">
+                        <div class="social-media">
+                            <a href="https://www.linkedin.com/in/amzad-hussain-5a8at9006/" target="_blank"><i
+                                    class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/AmzadT" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.facebook.com/Amzad01Hussain/" target="_blank"><i
+                                    class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/amzad01hussain/" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                        </div>
+
+                        <div class="resumeButtons">
+                            <div class="resume ">
+                                <a href="https://drive.google.com/file/d/1Pbqiz8XtPKhu9bIcY_8GYj_KsSvyZQdY/view?usp=sharing"
+                                    target="_blank" class="resume-btn">Resume <i
+                                        class="fa-sharp fa-solid fa-eye"></i></a>
+                            </div>
+
+                            <div class="resume">
+                                <a href="#contact" class="resume-btn">Contact Me <i class="fa-solid fa-user"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="home-img"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- ABOUT PAGE -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+
+                <div class="about-col-1"></div>
+
+                <div class="about-col-2">
+                    <h1 class="about">About <span>Me</span></h1>
+                    <p><span class="hi">Hi,</span> my name is <span class="bold-text">Amzad Hussain.</span> I am from
+                        Siwan, (Bihar). My age is 24 years. I am currently in the 2nd year of Bachelor of Commerce. I
+                        have completed my secondary higher education/12th from D.A.V Post Graduate College Siwan,
+                        (Bihar). And I have completed my primary education/10th from Islamiya High School Siwan,
+                        (Bihar). I am very interested in coding and I like doing coding a lot. I also enjoy listening to
+                        music, travelling, playing carrom and cricket. I have a joint family. There are 9 members in my
+                        family. My mother is a housewife and looks after the house. And my father also lives at home and
+                        does farming.</p>
+
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')"><i class="uil uil-code-branch"></i>
+                            Skills</p>
+                        <p class="tab-links" onclick="opentab('education')"><i class="uil uil-book-open"></i> Education
+                        </p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI & UX</span><br> Designing Web/App Interfaces <i
+                                    class="uil uil-palette skill"></i></li>
+                            <li><span>Front-End Development</span><br> UI Web/App Development <i
+                                    class="uil uil-desktop skill"></i></li>
+                            <li><span>Back-End Development</span><br> Back-End Web/App Development <i
+                                    class="uil uil-database skill"></i></li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Currently - 2024</span><br> Bachelor Of Commerce 2nd-Year <i
+                                    class="uil uil-book-alt stuDying"></i></li>
+                            <li><span>12th / Secondry Education - 2021</span><br> D.A.V Post Graduate College, Siwan
+                                (Bihar) <i class="uil uil-check-circle eduCation"></i></li>
+                            <li><span>10th / Primary Education - 2019</span><br> Islamiya High School, Siwan (Bihar) <i
+                                    class="uil uil-check-circle eduCation"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <!-- MOVING BOXES -->
+        <div class="moving-boxes">
+            <h1 class="my-languages">Languages <span>Frameworks </span>Libraries</h1>
+            <div class="line scroll-left">
+                <div class="box"><img
+                        src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
+                        alt="HTML"></div>
+                <div class="box"><img
+                        src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS">
+                </div>
+                <div class="box"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+                        alt="JavaScript"></div>
+                <div class="box"><img src="https://www.verticaldivers.com/wp-content/uploads/Advanced-javascript.png"
+                        alt="Advanced JavaScript"></div>
+                <div class="box"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+                        alt="React">
+                </div>
+                <div class="box"><img src="https://logowik.com/content/uploads/images/axios3626.jpg" alt="Axios"></div>
+                <div class="box"><img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI2aXg8vlYiOsuf-G0JqLZ6Cg4MUNg0KQrWA&s"
+                        alt="Fetch"></div>
+                <div class="box"><img src="https://img.icons8.com/?size=512&id=r9QJ0VFFrn7T&format=png" alt="Chakra UI">
+                </div>
+                <div class="box"><img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/1024px-Tailwind_CSS_Logo.svg.png"
+                        alt="Tailwind CSS"></div>
+
+                <div class="box"><img src="https://www.factfc.com/wp-content/uploads/2024/04/express-js.png"
+                        alt="Express.js"></div>
+                <div class="box"><img
+                        src="https://cdn.iconscout.com/icon/free/png-256/free-node-js-logo-icon-download-in-svg-png-gif-file-formats--technology-social-media-vol-5-pack-logos-icons-3030179.png?f=webp&w=256"
+                        alt="Node.js"></div>
+                <div class="box"><img src="https://www.cdnlogo.com/logos/m/72/mongoose.svg" alt="Mongoose"></div>
+                <div class="box"><img
+                        src="https://seeklogo.com/images/J/json-web-tokens-jwt-io-logo-C003DEC47A-seeklogo.com.png"
+                        alt="JWT"></div>
+                <div class="box"><img src="https://infinapps.com/wp-content/uploads/2018/10/mongodb-logo.png"
+                        alt="MongoDB">
+                </div>
+
+            </div>
+
+
+            <h1 class="my-tools">Tools & <span>Platforms</span></h1>
+            <div class="line scroll-right">
+                <div class="box"><img src="https://code.visualstudio.com/assets/images/code-stable.png" alt="VS Code">
+                </div>
+                <div class="box"><img src="https://openai.com/favicon.ico" alt="ChatGPT"></div>
+                <div class="box"><img
+                        src="https://cdn.iconscout.com/icon/free/png-256/free-postman-logo-icon-download-in-svg-png-gif-file-formats--technology-social-media-company-brand-vol-5-pack-logos-icons-2945092.png?f=webp&w=256"
+                        alt="Postman"></div>
+                <div class="box"><img src="https://www.thunderclient.com/favicon.ico" alt="Thunder Client"></div>
+
+                <div class="box"><img src="https://vercel.com/favicon.ico" alt="Vercel"></div>
+                <div class="box"><img
+                        src="https://backend.aionlinecourse.com/uploads/ai_software/image/2023/10/replit.png"
+                        alt="Replit"></div>
+                <div class="box"><img
+                        src="https://media.licdn.com/dms/image/v2/D4E0BAQGGDoFoqHtOvA/company-logo_200_200/company-logo_200_200/0/1702595267620/renderco_logo?e=2147483647&v=beta&t=ZYrxKUyruOEupgw5Lr5amgwgBCJq8VXH8r05Qr5CeQc"
+                        alt="Render"></div>
+
+                <div class="box"><img src="https://cdn.worldvectorlogo.com/logos/svg-2.svg" alt="SVG">
+                </div>
+                <div class="box"><img
+                        src="https://cdn-1.webcatalog.io/catalog/font-awesome/font-awesome-icon-filled-256.png?v=1714774397304"
+                        alt="Font Awesome"></div>
+
+                <div class="box"><img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="Git">
+                </div>
+                <div class="box"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+                        alt="GitHub"></div>
+                <div class="box"><img
+                        src="https://www.logiciels.pro/wp-content/uploads/2021/05/mongodb-compass-avis-prix-alternatives-logiciel.webp"
+                        alt="MongoDB Compass"></div>
+
+                <div class="box"><img src="https://vitejs.dev/logo.svg" alt="Vite"></div>
+                <div class="box"><img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2DcaD2hn3OHlvB-eP6EexYI28r1vbxxPfIw&s"
+                        alt="NPM"></div>
+
+            </div>
+        </div>
+        <center>
+            <h1 class="streak-head">GitHub <span>Streak</span> Stats</h1>
+            <img class="github-streak"
+                src="https://github-readme-streak-stats.herokuapp.com/?user=AmzadT&theme=github-dark" width="60%"
+                alt="Streak Stats" />
+        </center>
+
+        <center>
+            <img class="github-lang"
+                src="https://github-readme-stats.vercel.app/api/top-langs/?username=AmzadT&layout=compact&theme=vision-friendly-dark"
+                width="50%" />
+            <img class="github-stats"
+                src="https://github-readme-stats.vercel.app/api?username=AmzadT&show_icons=true&theme=radical"
+                width="40%" />
+        </center>
+
+    </div>
+
+
+
+
+
+    <!-- SERVICES PAGE -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title service">My <span>Services</span></h1>
+
+            <div class="services-list">
+
+                <div class="move-first ">
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Creating responsive, user-friendly websites with clean, and modern designs. I ensure that every site I build is optimized for performance I provide comprehensive web development services that bring ideas to life with clean, responsive, and optimized code. </p>
+                    <a class="learn-more-btn" href="#"
+                        data-content="Web Development : 👉 includes building responsive layouts, writing clean code. I provide full-stack web development services to create websites and applications that look great and work smoothly. With skills in both front-end and back-end development, I use tools like HTML, CSS, JavaScript, React, Node.js, and MongoDB to build websites that load quickly, look professional, and are easy to use on any device. Whether you need a custom website, an online store, or a web app, I focus on understanding your business and goals. I make sure the code is clean, secure, and optimized for search engines to help your website reach more people. From planning to launch, I work closely with you to make sure the final product meets your expectations and helps your business succeed online.">Learn
+                        More <span class="right-arrow">></span></a>
+                </div>
+
+                <div class="move-second ">
+                    <i class="fa-sharp fa-solid fa-crop-simple"></i>
+                    <h2>UI / UX Design</h2>
+                    <p>Creating intuitive and attractive user interfaces that make websites easy and enjoyable to use. I focus on blending good design with functionality, ensuring every interaction is smooth and engaging for the user. Delivering engaging user interfaces that enhance the overall user experience.</p>
+                    <a class="learn-more-btn" href="#"
+                        data-content="UI/UX Design : 👉 focuses on creating attractive and easy-to-use designs that enhance the user experience. I work on designing clear and visually pleasing interfaces, ensuring every element is in the right place to make navigation simple and enjoyable. My goal is to blend style with functionality, helping users have a smooth and satisfying journey on your website or app. I make sure the design reflects your brand and makes a positive impression on visitors. I create user-friendly and visually appealing designs that make it easy for people to navigate and enjoy your website or app. My focus is on combining style with functionality, so each interface not only looks great but also serves a purpose. I carefully plan each element, from buttons to layouts, to make sure it’s intuitive for users.">Learn More <span class="right-arrow">></span></a> 
+                </div>
+
+                <div class="move-third ">
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Back-End Development</h2>
+                    <p>Building secure and reliable server systems to support dynamic websites and applications. My work includes managing databases, creating APIs, and making sure data is handled safely and efficiently for a strong foundation behind the scenes.</p>
+                    <a class="learn-more-btn" href="#"
+                        data-content="Back-End Development : 👉 involves building the behind-the-scenes structure that powers websites and applications. I handle everything on the server side, from managing databases to creating APIs that connect different parts of your app. My focus is on making sure your data is secure, your website can handle growth, and everything works smoothly in the background. This way, your website or app has a strong, scalable foundation to support a great user experience. I build and manage the server-side systems that make websites and apps run efficiently and securely. This way, your website or app remains fast, reliable, and able to handle an increase in visitors, providing a stable foundation for a great user experience.">Learn
+                        More <span class="right-arrow">></span></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    <!-- POP-UP MODEL -->
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <span class="close-btn" id="closeBtn">&times;</span>
+            <h2>Service <span>Details</span> <i class="uil uil-document-layout-right srv-icon"></i></h2>
+            <p id="popup-text"></p>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- PROJECTS PAGE -->
+    <div id="projects">
+        <div class="container ">
+            <h1 class="sub-title project">My <span>Projects</span></h1>
+
+            <div class="work-list ">
+
+                <div class="work work-left ">
+                    <img src="./images/home image.jpg" alt="Projects Image">
+                    <div class="layer">
+                        <h3>E-Commerce Website</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa obcaecati fuga alias sintillopariatur voluptates rem quaerat non laborum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa obcaecati fuga alias sintillopariatur!</p>
+                        <div class="showCase">
+                            <a href="#"><i class="uil uil-github git-icon"></i></a>
+                            <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square live-icon"></i></a>
+                        </div>
+
+                        <div class="project-tech">
+                            <p>Source Code</p>
+                            <p>Go Live</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="work work-bottom ">
+                    <img src="./images/home image.jpg" alt="Projects Image">
+                    <div class="layer">
+                        <h3>E-Commerce Website</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa obcaecati fuga alias sint
+                            illo
+                            pariatur voluptates rem quaerat non laborum!</p>
+                        <div class="showCase">
+                            <a href="#"><i class="uil uil-github git-icon"></i></a>
+                            <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square live-icon"></i></a>
+                        </div>
+
+                        <div class="project-tech">
+                            <p>Source Code</p>
+                            <p>Go Live</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="work work-right ">
+                    <img src="./images/home image.jpg" alt="Projects Image">
+                    <div class="layer">
+                        <h3>E-Commerce Website</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa obcaecati fuga alias sint
+                            illo
+                            pariatur voluptates rem quaerat non laborum!</p>
+                        <div class="showCase">
+                            <a href="#"><i class="uil uil-github git-icon"></i></a>
+                            <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square live-icon"></i></a>
+                        </div>
+
+                        <div class="project-tech">
+                            <p>Source Code</p>
+                            <p>Go Live</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="work work-left ">
+                    <img src="./images/home image.jpg" alt="Projects Image">
+                    <div class="layer">
+                        <h3>E-Commerce Website</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa obcaecati fuga alias sint
+                            illo
+                            pariatur voluptates rem quaerat non laborum!</p>
+                        <div class="showCase">
+                            <a href="#"><i class="uil uil-github git-icon"></i></a>
+                            <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square live-icon"></i></a>
+                        </div>
+
+                        <div class="project-tech">
+                            <p>Source Code</p>
+                            <p>Go Live</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="work work-bottom ">
+                    <img src="./images/home image.jpg" alt="Projects Image">
+                    <div class="layer">
+                        <h3>E-Commerce Website</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa obcaecati fuga alias sint
+                            illo
+                            pariatur voluptates rem quaerat non laborum!</p>
+                        <div class="showCase">
+                            <a href="#"><i class="uil uil-github git-icon"></i></a>
+                            <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square live-icon"></i></a>
+                        </div>
+
+                        <div class="project-tech">
+                            <p>Source Code</p>
+                            <p>Go Live</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="work work-right ">
+                    <img src="./images/home image.jpg" alt="Projects Image">
+                    <div class="layer">
+                        <h3>E-Commerce Website</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa obcaecati fuga alias sint
+                            illo
+                            pariatur voluptates rem quaerat non laborum!</p>
+                        <div class="showCase">
+                            <a href="#"><i class="uil uil-github git-icon"></i></a>
+                            <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square live-icon"></i></a>
+                        </div>
+
+                        <div class="project-tech">
+                            <p>Source Code</p>
+                            <p>Go Live</p>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    <!-- CONTACT PAGE -->
+    <div id="contact">
+        <div class="container">
+            <h1 class="sub-title contact">Contact <span>Me</span></h1>
+            <div class="row">
+                <div class="contact-left">
+
+                    <div class="cont-image">
+                        <img src="./images/home image.jpg" alt="Contact Image">
+                    </div>
+
+                    <p><i class="uil uil-envelope-check"></i> amzadhussain7250@gmail.com</p>
+                    <p><i class="uil uil-outgoing-call"></i> 8298101008</p>
+                    <p><i class="uil uil-map-marker"></i> Siwan, Bihar (India)
+
+                    <div class="social-media bottom-icons">
+                        <a href="https://www.linkedin.com/in/amzad-hussain-5a8at9006/" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/AmzadT" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.facebook.com/Amzad01Hussain/" target="_blank"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/amzad01hussain/" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+
+                    </div>
+
+                    <div class="resume">
+                        <!-- Link to download the resume -->
+                        <a href="https://drive.google.com/uc?export=download&id=1Pbqiz8XtPKhu9bIcY_8GYj_KsSvyZQdY"
+                            download class="resume-btn download-btn">
+                            Download Resume <i class="fa-sharp fa-solid fa-circle-down"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+                <!-- <div class="contact-right">
+
+                    <form id="contact-form">
+                        <input type="text" name="name" placeholder="Enter Your Name" required>
+                        <input type="email" name="email" placeholder="Enter Your Email" required>
+                        <input type="text" name="subject" placeholder="Subject" required>
+                        <textarea name="message" rows="5" placeholder="Your Message Here" required></textarea>
+                        <span id="msg"></span>
+                        <button type="submit" class="btn2">Send Message <i class="uil uil-message"></i></button>
+                    </form>
+                </div> -->
+
+                <div class="contact-right">
+                    <span class="borderLine"></span>
+                    <form id="contact-form">
+                        <div class="inputBox">
+                            <input type="text" name="name" required>
+                            <span class="inputSpan">Enter Your Name</span>
+                            <i></i>
+                        </div>
+
+                        <div class="inputBox">
+                            <input type="email" name="email" required>
+                            <span class="inputSpan">Enter Your Email</span>
+                            <i></i>
+                        </div>
+
+                        <div class="inputBox">
+                            <input type="text" name="subject" required>
+                            <span class="inputSpan">Subject Here</span>
+                            <i></i>
+                        </div>
+
+                        <!-- Apply here -->
+                        <div class="inputBox" id="txtBox">
+                            <textarea name="message" rows="5" required></textarea>
+                            <span class="txtSpan">Enter Your Message Here</span>
+                            <i></i>
+                        </div>
+
+                        <span id="msg"></span>
+                        <button type="submit" class="btn2">Send Message <i class="uil uil-message"></i></button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- SCROLL TO TOP BUTTON -->
+    <div onclick="scrollToTop()" class="scroll-top" id="scrollTopButton">
+        <i class="uil uil-arrow-up"></i>
+        <span class="tooltip">Back To Top</span> <!-- Tooltip text -->
+    </div>
+
+
+
+
+    <!-- FOOTER COPYRIGHT PAGE -->
+    <footer>
+        <p>2024 Copyright &copy; Made By <i class="fa-sharp fa-solid fa-heart heart"></i> <span
+                class="highlight">Amzad-Hussain</span>. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>
+
+
+
+
+
+<!-- SCRIPTS LINK -->
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"></script> -->
+
+<script src="./index.js" type="text/javascript"></script>
