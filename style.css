@@ -1459,10 +1459,15 @@ img {
   transition: transform 0.5s;
 }
 
+.projects-box{
+  background-color: whitesmoke;
+}
+
 .layer {
   width: 100%;
   height: 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), cornflowerblue);
+  /* background: linear-gradient(rgba(0, 0, 0, 0.6), cornflowerblue); */
+  background: #222;
   border-radius: 10px;
   position: absolute;
   left: 0;
@@ -1488,6 +1493,10 @@ img {
 .layer p {
   line-height: 1.5;
   margin-top: -10px;
+}
+
+.size-text{
+  font-size: 20px;
 }
 
 .layer a {
@@ -1554,7 +1563,8 @@ img {
 
 .project-tech p {
   margin-right: 15px;
-  color: #091753;
+  /* color: #091753; */
+  color: #fff;
   font-size: 15px;
 }
 
