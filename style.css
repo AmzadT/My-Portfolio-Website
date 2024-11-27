@@ -1041,13 +1041,7 @@ nav ul {
   color: cornflowerblue;
 }
 
-@media screen and (max-width: 1075px) {
-  .about-col-1 {
-    flex-basis: 35%;
-    height: 400px;
-    width: 400px;
-  }
-}
+
 
 /* ============================================== ABOUT PAGE END ================================================ */
 /* ============================================== ABOUT PAGE END ================================================ */
@@ -1057,6 +1051,7 @@ nav ul {
   width: 95%;
   overflow: hidden;
   margin: auto;
+  height: 110vh;
 }
 
 .line {
@@ -1071,6 +1066,9 @@ nav ul {
   margin: 30px;
   height: 120px;
   transition: transform 0.5s ease, box-shadow 0.5s ease;
+  border: 2px solid rgb(21, 224, 224);
+  /* border: 2px solid greenyellow; */
+
 }
 
 .box p {
@@ -1434,7 +1432,7 @@ img {
 }
 
 .projects-box {
-  background-color: #222;
+  background-color: #333;
 }
 
 .layer {
@@ -1696,7 +1694,7 @@ img {
   overflow: hidden;
   margin-bottom: 30px;
   border: 2px solid white;
-  padding: 2px;
+  padding: 3px;
 }
 
 .cont-image img {
