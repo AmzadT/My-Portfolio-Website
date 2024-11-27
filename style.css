@@ -115,10 +115,6 @@ nav ul {
 
 /* RESPONSIVE FOR BIG LAPTOP SCREEN */
 @media screen and (max-width: 1440px) {
-  /* nav {
-    height: 60px;
-    padding: 0px 30px;
-  } */
 
   nav ul {
     display: flex;
@@ -126,29 +122,6 @@ nav ul {
     margin-right: -30px;
   }
 
-  /* .logo {
-    font-size: 30px;
-    font-weight: 700;
-  } */
-
-  /* .logo span {
-    font-size: 40px;
-  } */
-
-  /* nav ul li a {
-    font-size: 16px;
-  }
-
-  nav ul li a i {
-    font-size: 20px;
-  }
-
-  .theme-toggle {
-    margin-right: -30px;
-    font-size: 20px !important;
-    height: 30px !important;
-    width: 30px !important;
-  } */
 }
 
 /* RESPONSIVE FOR LARGE TABLET SCREEN */
@@ -965,7 +938,6 @@ nav ul {
   content: "";
   position: absolute;
   inset: 3px;
-  /* background-image: url("./images/about image.jpg"); */
   background-image: url("./images/home image.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -1072,7 +1044,6 @@ nav ul {
 @media screen and (max-width: 1075px) {
   .about-col-1 {
     flex-basis: 35%;
-    /* margin-top: 50px; */
     height: 400px;
     width: 400px;
   }
@@ -1098,7 +1069,13 @@ nav ul {
   padding: 20px;
   border-radius: 10px;
   margin: 30px;
+  height: 120px;
   transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.box p {
+  text-align: center;
+  margin-top: 30px;
 }
 
 .box:hover {
@@ -1126,6 +1103,7 @@ img {
   font-weight: 600;
   text-align: center;
   text-shadow: 1px 2px 1px rgb(21, 224, 224);
+  margin-top: 50px;
 }
 
 .my-languages span {
@@ -1176,7 +1154,7 @@ img {
   font-size: 30px;
   font-weight: 600;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 50px;
   margin-bottom: -20px;
   color: white;
   text-shadow: 1px 2px 1px rgb(21, 224, 224);
@@ -1225,7 +1203,7 @@ img {
 }
 
 .services-list div:hover {
-  background-color: steelblue !important;
+  background-color: #333 !important;
   transform: translateY(-15px) !important;
   transition: 0.6s ease !important;
 }
@@ -1233,16 +1211,12 @@ img {
 .services-list div i {
   font-size: 40px;
   margin-bottom: 30px;
-  /* color: rgb(21, 224, 224); */
   color: white;
   display: block;
   justify-content: center;
   text-align: center;
 }
 
-/* .services-list div i:hover {
-  color: #262626;
-} */
 
 .services-list div h2 {
   font-size: 25px;
@@ -1439,7 +1413,7 @@ img {
 .work-list {
   display: grid;
   grid-template-columns: repeat(3, 400px);
-  /* grid-gap: 50px 50px; */
+  gap: 50px 10px;
   margin-left: 35px;
 }
 
@@ -1459,16 +1433,14 @@ img {
   transition: transform 0.5s;
 }
 
-.projects-box{
-  background-color: whitesmoke;
+.projects-box {
+  background-color: #222;
 }
 
 .layer {
   width: 100%;
   height: 0;
-  /* background: linear-gradient(rgba(0, 0, 0, 0.6), cornflowerblue); */
-  background: #222;
-  border-radius: 10px;
+  background: linear-gradient(rgba(0, 0, 0.7, 0.9), rgb(100, 149, 237));
   position: absolute;
   left: 0;
   bottom: 0;
@@ -1495,8 +1467,9 @@ img {
   margin-top: -10px;
 }
 
-.size-text{
+.size-text {
   font-size: 20px;
+  color: wheat;
 }
 
 .layer a {
@@ -1563,8 +1536,7 @@ img {
 
 .project-tech p {
   margin-right: 15px;
-  /* color: #091753; */
-  color: #fff;
+  color: white;
   font-size: 15px;
 }
 
@@ -1638,9 +1610,29 @@ img {
   color: rgb(21, 224, 224);
 }
 
+.mail {
+  text-decoration: none;
+  color: white;
+}
+
+.mail:hover {
+  text-decoration: underline;
+  color: rgb(21, 224, 224);
+}
+
+.mail i {
+  margin-right: 12px;
+  font-size: 25px;
+  color: rgb(21, 224, 224);
+}
+
+.mail span {
+  font-family: monospace;
+  font-size: 20px;
+}
+
 .btn2 {
   display: block;
-  /* margin: 30px auto; */
   margin-top: 40px;
   margin-left: 150px;
   width: fit-content;
@@ -1703,6 +1695,8 @@ img {
   border-radius: 50%;
   overflow: hidden;
   margin-bottom: 30px;
+  border: 2px solid white;
+  padding: 2px;
 }
 
 .cont-image img {
@@ -1922,14 +1916,12 @@ img {
 
 textarea,
 input {
-  /* caret-color: rgb(21, 224, 224); */
   caret-color: black;
 }
 
 #msg {
   display: block;
   margin-top: 20px;
-  /* margin-left: 150px; */
   text-align: center;
   margin-right: 50px;
   margin-bottom: -20px;
